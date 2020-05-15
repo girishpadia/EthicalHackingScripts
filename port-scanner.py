@@ -5,10 +5,6 @@ import sys
 import socket
 from datetime import datetime
 
-def printServiceOnPort(portNumber, protocol):
-    serviceName = socket.getservbyport(portNumber, protocol);
-    print("Name of the service running at port number %d : %s"%(portNumber, serviceName));
-
 # Define our traget 
 if len(sys.argv) == 4:
     try:
